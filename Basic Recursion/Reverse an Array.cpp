@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
 vector<int> reverseArray(int n, vector<int> &nums)
 {
     int start = 0;

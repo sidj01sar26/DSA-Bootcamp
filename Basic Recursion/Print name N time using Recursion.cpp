@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
 vector<string> printNTimes(int n)
 {
     if (n == 0)

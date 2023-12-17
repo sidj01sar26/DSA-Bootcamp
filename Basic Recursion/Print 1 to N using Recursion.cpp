@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
 vector<int> printNos(int x)
 {
     if (x == 0)

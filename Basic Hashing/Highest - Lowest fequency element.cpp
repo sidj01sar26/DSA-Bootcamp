@@ -1,3 +1,10 @@
+// CodeStudio
+
+#include <iostream>
+#include <vector>
+#include<map>
+using namespace std;
+
 vector<int> getFrequencies(vector<int> &v)
 {
     map<int, int> mpp;

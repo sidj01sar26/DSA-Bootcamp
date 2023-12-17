@@ -1,3 +1,9 @@
+// CodeStudio
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
 vector<int> countFrequency(int n, int x, vector<int> &nums)
 {
     vector<int> v(n);

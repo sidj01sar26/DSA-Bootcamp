@@ -1,3 +1,9 @@
+// CodeStudio
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
 vector<int> getSecondOrderElements(int n, vector<int> a)
 {
     vector<int> result;
