@@ -1,7 +1,7 @@
 // Leetcode
 
-#include<vector>
-#include<algorithm>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 class Solution
@@ -10,7 +10,7 @@ public:
     void rotate(vector<vector<int>> &matrix)
     {
         int rows = matrix.size();
-        
+
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j <= i; j++)

@@ -3,8 +3,8 @@
 // Companies - Google Amazon Microsoft Netflix Tekion-corp Flipkart Bloomberg
 //             Samsung CRED Meesho Swiggy Dream11 InMobi Oyo PayTM Byju's
 
-#include<vector>
-#include<algorithm>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 class Solution

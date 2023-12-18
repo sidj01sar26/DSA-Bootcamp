@@ -1,7 +1,6 @@
 // CodeStudio
 
-#include <bits/stdc++.h>
-#include<vector>
+#include <vector>
 using namespace std;
 
 int largestElement(vector<int> &arr, int n)
