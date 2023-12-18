@@ -1,3 +1,6 @@
+#include <vector>
+using namespace std;
+
 void bubbleSort(vector<int> &arr, int n)
 {
     for (int round = 1; round < n; round++)
@@ -18,4 +21,3 @@ void bubbleSort(vector<int> &arr, int n)
         }
     }
 }
-

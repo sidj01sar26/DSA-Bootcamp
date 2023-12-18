@@ -2,7 +2,8 @@
 
 #include <iostream>
 #include <vector>
-#include<map>
+#include <map>
+#include <climits>
 using namespace std;
 
 vector<int> getFrequencies(vector<int> &v)

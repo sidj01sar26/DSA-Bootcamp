@@ -1,3 +1,6 @@
+#include <vector>
+using namespace std;
+
 void selectionSort(vector<int> &arr)
 {
     int n = arr.size();
