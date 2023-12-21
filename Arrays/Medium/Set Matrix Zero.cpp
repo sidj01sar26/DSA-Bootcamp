@@ -1,5 +1,7 @@
 // Leetcode
 
+// Companies - Microsoft Google Meta Netflix Amazon
+
 #include <vector>
 using namespace std;
 

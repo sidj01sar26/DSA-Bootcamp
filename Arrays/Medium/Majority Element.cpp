@@ -1,5 +1,7 @@
 // Leetcode
 
+// Companies - Flipkart Facebook Oracle Amazon Adobe Bloomberg Samsung Walmart CRED Meesho Swiggy Dream11 InMobi Oyo PayTM Byju's
+
 #include <vector>
 #include <algorithm>
 using namespace std;
