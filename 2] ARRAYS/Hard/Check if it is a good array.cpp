@@ -1,14 +1,22 @@
 // Leetcode
 
-class Solution {
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
 public:
-    bool isGoodArray(const vector<int>& nums) {
+    bool isGoodArray(const vector<int> &nums)
+    {
         int result = 0;
 
-        for (const auto& num : nums) {
-            result = gcd(num, result);
+        for (const auto &num : nums)
+        {
+            // result = gcd(num, result);
+            result = __gcd(num, result);
 
-            if (result == 1) {
+            if (result == 1)
+            {
                 return true;
             }
         }
