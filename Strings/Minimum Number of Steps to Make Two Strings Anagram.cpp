@@ -10,23 +10,25 @@ public:
     {
         vector<int> count(26, 0);
 
-        for (char c : s)
+        for (int i = 0; i < s.length(); i++)
         {
+            char c = s[i];
             count[c - 'a']++;
         }
 
-        for (char c : t)
+        for (int i = 0; i < t.length(); i++)
         {
+            char c = t[i];
             count[c - 'a']--;
         }
 
         int steps = 0;
 
-        for (int i : count)
+        for (int i = 0; i < 26; i++)
         {
-            if (i > 0)
+            if (count[i] > 0)
             {
-                steps += i;
+                steps += count[i];
             }
         }
 
