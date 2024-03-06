@@ -1,6 +1,6 @@
 // Leetcode
 
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Solution
@@ -8,48 +8,53 @@ class Solution
 public:
     vector<int> spiralOrder(vector<vector<int>> &matrix)
     {
+        vector<int> result; // Store the final result
 
-        vector<int> ans;
+        int rows = matrix.size();        // Number of rows in the matrix
+        int cols = matrix[0].size();     // Number of columns in the matrix
+        int totalElements = rows * cols; // Total number of elements in the matrix
 
-        int m = matrix.size();
-        int n = matrix[0].size();
-        int top = 0;
-        int bottom = m - 1;
-        int left = 0;
-        int right = n - 1;
+        int top = 0;           // Index for the top row
+        int right = cols - 1;  // Index for the rightmost column
+        int bottom = rows - 1; // Index for the bottom row
+        int left = 0;          // Index for the leftmost column
 
-        while (top <= bottom && left <= right)
-        {
-            for (int i = left; i <= right; ++i)
+        int count = 0; // Counter to keep track of the number of elements added to result
+        while (count < totalElements)
+        { // Continue until all elements are processed
+
+            // Traverse from left to right in the top row
+            for (int i = top; i <= right && count < totalElements; i++)
             {
-                ans.push_back(matrix[top][i]);
+                result.push_back(matrix[top][i]);
+                count++;
             }
-            top++;
+            top++; // Move to the next row
 
-            for (int i = top; i <= bottom; ++i)
+            // Traverse from top to bottom in the rightmost column
+            for (int i = top; i <= bottom && count < totalElements; i++)
             {
-                ans.push_back(matrix[i][right]);
+                result.push_back(matrix[i][right]);
+                count++;
             }
-            right--;
+            right--; // Move to the previous column
 
-            if (top <= bottom)
+            // Traverse from right to left in the bottom row
+            for (int i = right; i >= left && count < totalElements; i--)
             {
-                for (int i = right; i >= left; --i)
-                {
-                    ans.push_back(matrix[bottom][i]);
-                }
-                bottom--;
+                result.push_back(matrix[bottom][i]);
+                count++;
             }
+            bottom--; // Move to the previous row
 
-            if (left <= right)
+            // Traverse from bottom to top in the leftmost column
+            for (int i = bottom; i >= top && count < totalElements; i--)
             {
-                for (int i = bottom; i >= top; --i)
-                {
-                    ans.push_back(matrix[i][left]);
-                }
-                left++;
+                result.push_back(matrix[i][left]);
+                count++;
             }
+            left++; // Move to the next column
         }
-        return ans;
+        return result; // Return the final result
     }
 };
