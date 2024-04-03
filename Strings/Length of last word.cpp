@@ -52,3 +52,23 @@ public:
         return result;
     }
 };
+
+class Solution
+{
+public:
+    int lengthOfLastWord(string s)
+    {
+        int n = s.length(); // Get the length of the input string
+        int j = n - 1;      // Start from the end of the string
+        while (j >= 0 && s[j] == ' ')
+        {
+            j--;
+        }          // Move j to the last non-space character
+        int i = j; // Copy the position of j to i
+        while (i >= 0 && s[i] != ' ')
+        {
+            i--;
+        }             // Move i to the beginning of the last word
+        return j - i; // Return the length of the last word
+    }
+};
